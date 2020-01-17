@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/P1021Touch" />
             <option value="$PROJECT_DIR$/P1031MultiTouch" />
             <option value="$PROJECT_DIR$/P1041FragmentLifecycle" />
+            <option value="$PROJECT_DIR$/P1051FragmentDynamic" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
