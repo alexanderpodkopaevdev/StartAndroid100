@@ -1,2 +1,2 @@
-include ':app', ':P1011ContentProvider', ':P1021Touch'
+include ':app', ':P1011ContentProvider', ':P1021Touch', ':P1031MultiTouch'
 rootProject.name='My Application'
