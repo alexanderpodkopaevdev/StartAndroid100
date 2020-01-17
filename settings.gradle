@@ -1,2 +1,2 @@
-include ':app', ':P1011ContentProvider', ':P1021Touch', ':P1031MultiTouch', ':P1041FragmentLifecycle', ':P1051FragmentDynamic'
+include ':app', ':P1011ContentProvider', ':P1021Touch', ':P1031MultiTouch', ':P1041FragmentLifecycle', ':P1051FragmentDynamic', ':p1061fragmentactivity'
 rootProject.name='My Application'
