@@ -1,0 +1,2 @@
+include ':app', ':P1011ContentProvider', ':P1021Touch'
+rootProject.name='My Application'
