@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/p1071actionbaritems" />
             <option value="$PROJECT_DIR$/p1091listfragment" />
             <option value="$PROJECT_DIR$/p1101dialogfragment" />
+            <option value="$PROJECT_DIR$/p1111preferencefragment" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
