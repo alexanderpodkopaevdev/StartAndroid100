@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/p1111preferencefragment" />
             <option value="$PROJECT_DIR$/p1131actionmode" />
             <option value="$PROJECT_DIR$/p1151multiplescreen" />
+            <option value="$PROJECT_DIR$/p1171simplewidget" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

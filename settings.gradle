@@ -1,2 +1,2 @@
-include ':app', ':P1011ContentProvider', ':P1021Touch', ':P1031MultiTouch', ':P1041FragmentLifecycle', ':P1051FragmentDynamic', ':p1061fragmentactivity', ':p1071actionbaritems', ':p1091listfragment', ':p1101dialogfragment', ':p1111preferencefragment', ':p1131actionmode', ':p1151multiplescreen'
+include ':app', ':P1011ContentProvider', ':P1021Touch', ':P1031MultiTouch', ':P1041FragmentLifecycle', ':P1051FragmentDynamic', ':p1061fragmentactivity', ':p1071actionbaritems', ':p1091listfragment', ':p1101dialogfragment', ':p1111preferencefragment', ':p1131actionmode', ':p1151multiplescreen', ':p1171simplewidget'
 rootProject.name='My Application'
