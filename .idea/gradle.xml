@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/p1151multiplescreen" />
             <option value="$PROJECT_DIR$/p1171simplewidget" />
             <option value="$PROJECT_DIR$/p1201clickwidget" />
+            <option value="$PROJECT_DIR$/p1211listwidget" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
