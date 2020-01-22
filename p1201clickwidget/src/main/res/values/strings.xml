@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ClickWidget</string>
+    <string name="config">Config</string>
+    <string name="update">Update</string>
+    <string name="count">Count</string>
+    <string name="google">Google</string>
+    <string name="ok">OK</string>
+</resources>
