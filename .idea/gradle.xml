@@ -25,6 +25,7 @@
             <option value="$PROJECT_DIR$/p1201clickwidget" />
             <option value="$PROJECT_DIR$/p1211listwidget" />
             <option value="$PROJECT_DIR$/p1251viewpager" />
+            <option value="$PROJECT_DIR$/p1261mediaplayer" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
