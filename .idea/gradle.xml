@@ -29,6 +29,7 @@
             <option value="$PROJECT_DIR$/p1271soundpool" />
             <option value="$PROJECT_DIR$/p1281audiofocus" />
             <option value="$PROJECT_DIR$/p1311cameraintent" />
+            <option value="$PROJECT_DIR$/p1321camerascreen" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
