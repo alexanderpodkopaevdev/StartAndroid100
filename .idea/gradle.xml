@@ -27,6 +27,8 @@
             <option value="$PROJECT_DIR$/p1251viewpager" />
             <option value="$PROJECT_DIR$/p1261mediaplayer" />
             <option value="$PROJECT_DIR$/p1271soundpool" />
+            <option value="$PROJECT_DIR$/p1281audiofocus" />
+            <option value="$PROJECT_DIR$/p1311cameraintent" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
