@@ -31,6 +31,7 @@
             <option value="$PROJECT_DIR$/p1311cameraintent" />
             <option value="$PROJECT_DIR$/p1321camerascreen" />
             <option value="$PROJECT_DIR$/p1371sensors" />
+            <option value="$PROJECT_DIR$/p1381location" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
