@@ -1,17 +1,19 @@
 package com.example.p1391googlemaps
 
+import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.CameraPosition
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.LatLngBounds
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 import kotlinx.android.synthetic.main.activity_maps.*
+
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private val TAG = "myLogs"
@@ -25,16 +27,24 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
         btnTest.setOnClickListener {
-            val cameraPosition = CameraPosition.Builder()
-                .target(LatLng(27.0, 33.0))
-                .zoom(5f)
-                .bearing(45f)
-                .tilt(20f)
-                .build()
-            val cameraUpdate = CameraUpdateFactory.newLatLngBounds(
-                LatLngBounds(LatLng(-39.0, 112.0), LatLng(-11.0, 154.0)),
-            100)
-            mMap.animateCamera(cameraUpdate)
+            mMap.addMarker(MarkerOptions().position(LatLng(-10.0,-10.0)).title("Hello").icon(
+                BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)
+            ))
+            mMap.addMarker(MarkerOptions().position(LatLng(0.0,0.0)).title("Hello2").icon(
+                BitmapDescriptorFactory.defaultMarker()
+            ))
+            mMap.addMarker(MarkerOptions().position(LatLng(10.0,10.0)).title("Hello3").icon(
+                bitmapDescriptorFromVector(this, R.drawable.ic_android_black_24dp)
+            ))
+        }
+    }
+
+    private fun bitmapDescriptorFromVector(context: Context, vectorResId: Int): BitmapDescriptor? {
+        return ContextCompat.getDrawable(context, vectorResId)?.run {
+            setBounds(0, 0, intrinsicWidth, intrinsicHeight)
+            val bitmap = Bitmap.createBitmap(intrinsicWidth, intrinsicHeight, Bitmap.Config.ARGB_8888)
+            draw(Canvas(bitmap))
+            BitmapDescriptorFactory.fromBitmap(bitmap)
         }
     }
 
@@ -58,7 +68,23 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun init() {
-        mMap.setOnMapClickListener {
+        val list: MutableList<LatLng> = ArrayList()
+        list.add(LatLng((-4).toDouble(), (-5).toDouble()))
+        list.add(LatLng(0.0, (-1).toDouble()))
+        list.add(LatLng(4.0, (-5).toDouble()))
+        list.add(LatLng(0.0, (-9).toDouble()))
+
+        val polygoneOptions = PolygonOptions()
+            .add(LatLng((-5).toDouble(), (-10).toDouble()))
+            .add(LatLng((-5).toDouble(), 0.0))
+            .add(LatLng(5.0, 0.0))
+            .add(LatLng(5.0, (-10).toDouble()))
+            .addHole(list)
+            .strokeColor(Color.CYAN).strokeWidth(1f)
+            .fillColor(Color.GREEN)
+
+        mMap.addPolygon(polygoneOptions)
+        /*mMap.setOnMapClickListener {
             Log.d(TAG, "onMapClick: " + it.latitude + "," + it.longitude)
         }
         mMap.setOnMapLongClickListener {
@@ -82,7 +108,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.setOnCameraIdleListener {
             val midLatLng: LatLng = mMap.cameraPosition.target//map's center position latitude & longitude
             Log.d(TAG, "onCameraChange: " + midLatLng.latitude + "," + midLatLng.longitude)
-        }
+        }*/
 
     }
 }
