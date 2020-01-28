@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/p1381location" />
             <option value="$PROJECT_DIR$/p1391googlemaps" />
             <option value="$PROJECT_DIR$/p1411canvasview" />
+            <option value="$PROJECT_DIR$/p1611bitmapcache" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
