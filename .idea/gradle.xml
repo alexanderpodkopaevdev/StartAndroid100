@@ -36,6 +36,7 @@
             <option value="$PROJECT_DIR$/p1411canvasview" />
             <option value="$PROJECT_DIR$/p1611bitmapcache" />
             <option value="$PROJECT_DIR$/p1621drawableshape" />
+            <option value="$PROJECT_DIR$/p1851notifications" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
